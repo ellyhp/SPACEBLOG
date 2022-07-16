@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url(../img/Banner.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*____________NAVEGATION________*/
+
+.nav-container{
+    display: flex;
+    justify-content: star;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-container:nth-child(1) img{
+    width: 60px;
+    padding-right: 20px;
+}
+
+.nav-container a{
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-container a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.selection{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.nav-container div .neon{
+    text-shadow: 0 0 5px yellow;
+}
+
+.nav-container div .neon:hover{
+    text-shadow: 0 0 5px yellow, 0 0 5px yellow, 0 0 5px yellow;
+}
+
+
+/*EFECT BANNER*/
+
+.efect-banner{
+    display: flex;
+    justify-content: center;
+}
+
+.efect-banner{
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.efect-banner .span-efect{
+    font-size: 90px;
+    color: white;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+
+    animation: typing 2s steps(18), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+
+@keyframes blink{
+    50% { border-color: transparent}
+}
